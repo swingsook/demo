@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 def load_df():
-	df = pd.read_csv('./data/titanic.csv')
+	df = pd.read_csv('titanic.csv')
 	survival_options = df.Survived.unique()
 	p_class_options = df.Pclass.unique()
 	sex_options = df.Sex.unique()
